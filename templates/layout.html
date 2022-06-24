@@ -1,13 +1,17 @@
+<!--Sillico-->
+<!--By Gordon Peng - 'Gordon-coder'-->
 <!DOCTYPE html>
 
 <html lang="en">
     <head>
+        <!--Head-->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../static/css/styles.css">
         <title>Sillico</title>
     </head>
     <body>
+        <!--Header-->
         <div id="header">
             <img src="../static/jpgs/side.jpg" height="40" onclick="showsidebar()" id="side">
             <img src="../static/jpgs/logo.jpg" alt="Logo" width="174">
@@ -19,6 +23,7 @@
                 <a href="/#contact-us" class="header-a" >Contact us</a>
             </span>
         </div>
+        <!--Sidebar-->
         <div id="sidebar">
             <div id="side-links">
                 <a href="/" class="header-a">Mainpage</a><br>
@@ -28,6 +33,7 @@
                 <a href="/#contact-us" class="header-a" >Contact us</a><br>
             </div>
         </div>
+        <!--Script for sidebar-->
         <script>
             function showsidebar() {
                 if (document.getElementById("sidebar").style.visibility == "visible"){
@@ -47,6 +53,7 @@
         </script>
         <main>
             <br>
+            <!--Picture animaton-->
             <div id="animation">
                 <img src="../static/jpgs/description/d1.jpg" onclick="next()" id="description" width="100%">
                 <script>
@@ -63,9 +70,11 @@
                     //setInterval(next, 10000);
                 </script>
             </div>
+            <!--Main block-->
             {% block main %}  {% endblock %}
         </main>
         <footer id="contact-us">
+            <!--Footer-->
             <h2>CONTACT US</h2><br>
             <span id="how-to-contact1">
                 <ul>
