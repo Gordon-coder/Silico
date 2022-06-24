@@ -2,6 +2,10 @@
     margin: 0;
 }
 
+#description {
+    margin-top: 6px;
+}
+
 #side {
     visibility: visible;
     z-index: 1;
