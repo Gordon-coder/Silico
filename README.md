@@ -5,7 +5,7 @@ Website link: http://www.insil.co/
 # How to open the website
 1. Download the whole file
 2. Change to the Silico directory (where app.py is located)
-3. Run 'flask run' in the terminal \n
+3. Run 'flask run' in the terminal. 
 Output:
  * Environment: production
    WARNING: This is a development server. Do not use it in a production deployment.
