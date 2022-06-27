@@ -6,5 +6,9 @@
 {% endblock title %}
 
 {% block main %}
-    <h6>self.title</h6>
+<div style="padding: 20px">
+    <h3>{{ self.title() }}</h3>
+    <p style="color:gray">{% block description %}  {% endblock %}</p>
+    <button type="button" name="inquire" id="bt" style="background-color:red; padding:5px;">Inquire Now!</button>
+</div>
 {% endblock main %}
