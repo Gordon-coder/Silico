@@ -1,6 +1,3 @@
-# Link
-Website link: http://www.insil.co/
-
 # How to open the website
 1. Download the whole file
 2. Run 'cd -location of the "Silico" file-' (where app.py is located)
