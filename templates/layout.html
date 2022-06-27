@@ -8,7 +8,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../static/css/styles.css">
-        <title>Sillico</title>
+        <title>{% block title %} Sillico {% endblock title %}</title>
     </head>
     <body>
         <!--Header-->
@@ -70,7 +70,7 @@
                 </script>
             </div>
             <!--Main block-->
-            {% block main %}  {% endblock %}
+            {% block main %}  {% endblock title %}
         </main>
         <footer id="contact-us">
             <!--Footer-->
