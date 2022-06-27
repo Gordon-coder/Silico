@@ -1,7 +1,29 @@
 {% extends "products.html" %}
 
-{% block t %} nope {% endblock t %}
+{% block t %} Safe Algorithm Chip {% endblock t %}
 
 {% block description %} 
-    Safe Algorithm Chip
+    According to different blockchain and 'Internet of Things' terminal application requirements, provide customized chip customization required by application scenarios.
 {% endblock description %}
+
+{% block img %} 
+    <img id="img" src="../static/jpgs/products/1/p1.jpg" width="900" height="600" onclick="next()">
+    <script>
+    
+        var i = 1;
+        function next() {
+            i++;
+
+            if (i == 4) {
+                i = 1;
+            }
+
+            document.getElementById("img").src = "../static/jpgs/products/1/p"+i+".jpg";
+        }
+        
+    </script>
+{% endblock img %}
+
+{% block body %}
+
+{% endblock body %}
