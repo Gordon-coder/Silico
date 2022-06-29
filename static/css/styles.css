@@ -127,3 +127,10 @@
     width: calc(50% - 150px);
     float: right;
 }
+
+#copy {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
