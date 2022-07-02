@@ -13,3 +13,7 @@ def p3832003():
 @app.route("/4502226")
 def p4502226():
     return render_template("4502226.html")
+
+@app.route("/3832067")
+def p3832067():
+    return render_template("3832067.html")
