@@ -7,5 +7,9 @@ def index():
     return render_template("index.html")
 
 @app.route("/3832003")
-def p1():
-    return render_template("p1.html")
+def p3832003():
+    return render_template("3832003.html")
+
+@app.route("/4502226")
+def p4502226():
+    return render_template("4502226.html")

@@ -1,31 +1,17 @@
 {% extends "products.html" %}
 
-{% block t %} Safe Algorithm Chip {% endblock t %}
+{% block t %} Safe Algorithm Speedup Board {% endblock t %}
 
 {% block description %} 
-    According to different blockchain and 'Internet of Things' terminal application requirements, provide customized chip customization required by application scenarios.
+    According to application requirements, algorithm module customization and FPGA selection customization are provided.
 {% endblock description %}
 
 {% block img %} 
-    <img id="img" src="../static/jpgs/products/1/p1.jpg" width="100%"onclick="next()">
-    <script>
-    
-        var i = 1;
-        function next() {
-            i++;
-
-            if (i == 4) {
-                i = 1;
-            }
-
-            document.getElementById("img").src = "../static/jpgs/products/1/p"+i+".jpg";
-        }
-        
-    </script>
+    <img id="img" src="../static/jpgs/products/4502226/p.jpg" width="100%">
 {% endblock img %}
 
 {% block body %}
-    <div id="details" style="padding: 20px">
+    <div style="padding: 20px">
         <h4 style="padding: 5px">Product details</h4>
         <hr>
         <h5 style="padding: 5px">Product Features</h5>
@@ -61,5 +47,4 @@
             </li>
         </ul>
     </div>
-    <img src="../static/jpgs/products/1/table.jpg" alt="table" width="100%">
 {% endblock body %}
