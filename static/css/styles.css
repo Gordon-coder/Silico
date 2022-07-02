@@ -52,68 +52,27 @@ a:hover{
     color: cyan;
 }
 
-@media only screen and (min-width: 800px) {
-    #header {
-        position: fixed;
-        background-color: black;
-        text-align: center;
-        height: 60px;
-        width: 100%;
-    }
-
-    #side {
-        visibility: hidden;
-    }
-
-    #sidebar {
-        visibility: hidden;
-    }
-
-    #links {
-        visibility: visible;
-    }
-
-    .header-a {
-        padding: 40px 20px 10px;
-        color: #dddddd;
-        text-decoration: none;
-    }
+#about > li {
+    width: 100%;
+    float:left;
 }
 
-#key-title {
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    background-color: cyan;
-    color: white;
-}
-
-#products {
-    margin: auto;
-}
-
-#products > li {
-    padding: 15px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    width: calc(100% / 5 - 20px - 20px);
+.list-decorators {
     display: inline-block;
-    
-}
-
-#about-us {
-    margin:0;
-    background-color: black;
 }
 
 #main-text {
     background-color: cyan;
-    position: relative;
-    width: 300px;
-    padding: 10px;
-    margin: 2%;
-    left: 10%;
-    top: 5%;
+    width:100%;
+    padding:2%;
+}
+
+#about {
+    list-style-type: none;
+}
+
+#about-us {
+    padding:0;
 }
 
 #contact-us {
@@ -150,4 +109,85 @@ a:hover{
     color: white;
     text-align: center;
     padding: 10px;
+}
+
+@media only screen and (min-width: 800px) {
+    #header {
+        position: fixed;
+        background-color: black;
+        text-align: center;
+        height: 60px;
+        width: 100%;
+    }
+
+    #side {
+        visibility: hidden;
+    }
+
+    #sidebar {
+        visibility: hidden;
+    }
+
+    #links {
+        visibility: visible;
+    }
+
+    .header-a {
+        padding: 40px 20px 10px;
+        color: #dddddd;
+        text-decoration: none;
+    }
+
+    #about-us {
+        padding:2.5%;
+        padding-top:10%;
+        background-color: black;
+    }
+    
+    #main-text {
+        width:15%;
+        margin-top: -2%;
+        padding:10px;
+        background-color: cyan;
+        float:left;
+    }
+    
+    #about {
+        margin-top:6%;
+        float:left;
+        width:80%;
+        background-color: white;
+        list-style-type: none;
+    }
+    
+    #about > li {
+        width: 45%;
+        margin:2%;
+        float:left;
+    }
+
+    .list-decorators {
+        display: inline-block;
+    }
+}
+
+#key-title {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: cyan;
+    color: white;
+}
+
+#products {
+    margin: auto;
+}
+
+#products > li {
+    padding: 15px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: calc(100% / 5 - 20px - 20px);
+    display: inline-block;
+    
 }
