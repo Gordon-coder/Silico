@@ -127,12 +127,22 @@ a:hover{
     padding: 15px;
     padding-top: 30px;
     padding-bottom: 30px;
-    width: calc(100% / 5 - 20px - 20px);
+    width: 220px;
     display: inline-block;
     
 }
 
-@media only screen and (min-width: 800px) {
+#news {
+    background-color: lightgray;
+    margin-top: 800px;
+    padding: 5%;
+}
+
+#news-links {
+    list-style-type: none;
+}
+
+@media only screen and (min-width: 1000px) {
     #header {
         position: fixed;
         background-color: black;
@@ -176,13 +186,13 @@ a:hover{
     #about {
         margin-top:6%;
         float:left;
-        width:80%;
         background-color: white;
         list-style-type: none;
+        width:75%;
     }
     
     #about > li {
-        width: 45%;
+        width: 40%;
         margin:2%;
         float:left;
     }
