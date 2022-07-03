@@ -136,9 +136,18 @@ a:hover{
     background-color: lightgray;
     margin-top: 800px;
     padding: 5%;
+    height:500px;
+}
+
+#dad {
+    float:left;
+    width:40%;
 }
 
 #news-links {
+    padding:10px;
+    float:left;
+    width:40%;
     list-style-type: none;
 }
 
