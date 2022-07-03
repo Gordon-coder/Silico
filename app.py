@@ -2,22 +2,28 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
+# Index
 @app.route("/")
 def index():
     return render_template("index.html")
 
-@app.route("/3832003")
+# Products
+@app.route("/products/3832003")
 def p3832003():
-    return render_template("3832003.html")
+    return render_template("p3832003.html")
 
-@app.route("/4502226")
+@app.route("/products/4502226")
 def p4502226():
-    return render_template("4502226.html")
+    return render_template("p4502226.html")
 
-@app.route("/3832067")
+@app.route("/products/3832067")
 def p3832067():
-    return render_template("3832067.html")
+    return render_template("p3832067.html")
 
-@app.route("/4502382")
+@app.route("/products/4502382")
 def p4502382():
-    return render_template("4502382.html")
+    return render_template("p4502382.html")
+
+@app.route("/products/3832071")
+def p3832071():
+    return render_template("p3832071.html")
