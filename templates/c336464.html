@@ -1,0 +1,80 @@
+{% extends 'layout.html' %}
+
+{% block main %}
+    <style>
+        .jpg {
+            position: relative;
+            z-index: 1;
+            height:280px; 
+            width:360px;
+            border-radius: 10px;
+        }
+
+        .d {
+            position: absolute;
+            padding: 20px;
+            height:240px; 
+            width:320px;
+            z-index: 2;
+            background-color: red;
+            top:0;
+            border-radius: 10px;
+            visibility: hidden;
+        }
+
+        .anchor {
+            text-decoration: none;
+            color: black;
+            margin: 30px;
+            padding: 3px;
+            border: 2px solid white;
+            border-radius: 10px;
+            display: block;
+            text-align: center;
+            width: 100px;
+        }
+
+        #list {
+            list-decoration-type: none;
+        }
+
+        #list > li {
+            display: inline-block;
+            margin: 20px;
+        }
+    </style>
+    <img src="../static/jpgs/contents/336464/p.jpg" width="100%">
+    <h1 style="text-align: center"> Customer Case</h1>
+    <ul id="list">
+        <li>
+            <div onmouseover="hover(1)" class="jpg">
+                <img src="../static/jpgs/contents/336464/p-img1.jpg"  width="360" height="280" onmousemove="hover('p1')">
+                <div class="d" id="p1" onmouseout="out('p1')">
+                    <time>2020/10/28</time>
+                    <h3>区块链+教育/培训</h3>
+                    <p>应用于深圳某大学的芯链区块链教学系统</p>
+                    <a class="anchor">Learn more</a>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div onmouseover="hover(2)" class="jpg">
+                <img src="../static/jpgs/contents/336464/p-img2.jpg" width="360" height="280" onmousemove="hover('p2')">
+                <div class="d" id="p2" onmouseout="out('p2')">
+                    <time>2020/10/28</time>
+                    <h3>区块链+教育/培训</h3>
+                    <p>应用于深圳某大学的芯链区块链教学系统</p>
+                    <a class="anchor">Learn more</a>
+                </div>
+            </div>
+        </li>
+    </ul>
+    <script>
+        function hover(id){
+            document.getElementById(id).style.visibility = "visible";
+        }
+        function out(id){
+            document.getElementById(id).style.visibility = "hidden";
+        }
+    </script>
+{% endblock main %}

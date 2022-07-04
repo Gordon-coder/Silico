@@ -27,3 +27,7 @@ def p4502382():
 @app.route("/products/3832071")
 def p3832071():
     return render_template("p3832071.html")
+
+@app.route("/contents/336464")
+def c336464():
+    return render_template("c336464.html")
