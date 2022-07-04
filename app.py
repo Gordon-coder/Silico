@@ -33,5 +33,9 @@ def c336464():
     return render_template("c336464.html")
 
 @app.route("/contents/793909a")
-def c793909():
+def c793909a():
     return render_template("c793909a.html")
+
+@app.route("/contents/793909b")
+def c793909b():
+    return render_template("c793909b.html")
