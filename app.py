@@ -43,3 +43,7 @@ def c793909b():
 @app.route("/NewsDetail/2255002")
 def nd2255002():
     return render_template("nd2255002.html")
+
+@app.route("/NewsDetail/2254949")
+def nd2254949():
+    return render_template("nd2254949.html")
